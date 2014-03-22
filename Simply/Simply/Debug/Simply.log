@@ -1,0 +1,37 @@
+﻿Der Buildvorgang wurde am 22.03.2014 22:28:51 gestartet.
+     1>Projekt "X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Simply.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>PreBuildEvent:
+         copy_engine.bat
+         :VCEnd
+         .\..\..\..\GooseBerry\GooseBerry\inc\cImageViewer.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\cMatLoader.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Array.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Color.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Convert.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Defines.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Errors.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Exception.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Log.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Material.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Matrix.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Mesh.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_MeshLoader.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_MeshQueue.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Object.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_OpenGL.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_PngLoader.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Queue.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Tex.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Vector2.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Vector3.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\gooseberry.h
+         22 Datei(en) kopiert
+       ClCompile:
+         D:\APPLICATION\Visual Studio 2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\simply.cc
+         simply.cc
+     1>x:\projects\cpp\opengl\simply\simply\simply\src\simply.cc(21): fatal error C1083: Datei (Include) kann nicht geöffnet werden: ".\Simply\ext\gooseberry.h": No such file or directory
+     1>Die Erstellung des Projekts "X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Simply.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:01.97
