@@ -57,10 +57,13 @@ class GOOSEBERRY_API GB_Mesh
 		GB_Struct::Normal *	normals_;			//!< list of normals
 		GB_Struct::TexCoord *	tex_coords_;	//!< list of texture coordiantes
 
-		//	(De-)Constructor & Copy
+		//	(De-)Constructor
 		~GB_Mesh();
 		GB_Mesh();
+		
+		//	Overload
 		GB_Mesh(const GB_Mesh & right);
+		GB_Mesh operator= (GB_Mesh const& right);
 
 		//	Functions
 		VOID Draw();
@@ -74,7 +77,7 @@ class GOOSEBERRY_API GB_Mesh
 //==================================================================
 namespace GB_SimpleMeshes
 {
-	extern GB_Mesh gbCube;
+	GB_Mesh static gbCube;
 	//GOOSEBERRY_API extern GB_MeshSimple gbPyramid;
 	//GOOSEBERRY_API extern GB_MeshSimple gbRamp;
 	//GOOSEBERRY_API extern GB_MeshSimple gbThreeVert;
