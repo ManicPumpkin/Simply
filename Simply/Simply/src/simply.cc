@@ -18,7 +18,7 @@
 #include <Windows.h>
 
 //#include "..\..\Log\inc\Log.h"
-#include ".\ext\gooseberry.h"
+#include ".\..\ext\gooseberry\gooseberry.h"
 
 //==================================================================
 //	NAMESPACE
@@ -47,23 +47,21 @@ GB_Enum::gbResult Render(float time);
 //==================================================================
 int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE h_prev_instance, PSTR cmd_line, int cmd_show)
 {
-	GB_Var::g_hinstance = hinstance;
-	GB_Var::g_hwnd = NULL;
-	GB_Var::g_wnd_title = "GooseBerryTestApplication";
-	GB_Var::g_wnd_name = "GooseBerryTestApplication";
-	GB_Var::g_wnd_width = 800;
-	GB_Var::g_wnd_height = 600;
-	GB_Var::g_wnd_x = 0;
-	GB_Var::g_wnd_y = 0;
-	GB_Var::g_bits_color = 32;
-	GB_Var::g_bits_depth = 32;
-	GB_Var::g_bits_alpha = 32;
-	GB_Var::g_fullscreen = FALSE;
-	GB_Var::g_active = TRUE;
+	GB_Var::g_hinstance		= hinstance;
+	GB_Var::g_hwnd			= NULL;
+	GB_Var::g_wnd_title		= "Simply";
+	GB_Var::g_wnd_name		= "Simply";
+	GB_Var::g_wnd_width		= 800;
+	GB_Var::g_wnd_height	= 600;
+	GB_Var::g_wnd_x			= 0;
+	GB_Var::g_wnd_y			= 0;
+	GB_Var::g_bits_color	= 32;
+	GB_Var::g_bits_depth	= 32;
+	GB_Var::g_bits_alpha	= 32;
+	GB_Var::g_fullscreen	= FALSE;
+	GB_Var::g_active		= TRUE;
 
-	//Log::getInstance()->set_file_path_and_name(string("log"), string("log.html"));
-	//Log::getInstance()->debug_mode_ = true;
-	GB_LDEBUG("GooseBerryTestingApplication started");
+	GB_LDEBUG("Simply application started");
 	GB_LDEBUG("Log system initialized succesfully");
 
 	//	Start code here
@@ -76,9 +74,6 @@ int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE h_prev_instance, PSTR cmd_line
 		Show(GB_Var::g_hwnd);
 		Run();
 		Exit();
-
-		if (GB_Func::Exit())
-			throw GB_Exception(ERR_GB_EXIT_STR, ERR_GB_EXIT_ID);
 	}
 	catch (const GB_Exception &exception)
 	{
@@ -86,8 +81,11 @@ int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE h_prev_instance, PSTR cmd_line
 		GB_MSGBOXERR(exception.GetStr(), exception.GetId());
 	}
 
-	GB_LDEBUG("GooseBerryTestingApplication finished");
+	GB_LDEBUG("Simply finished");
 	getchar();
+
+	if (GB_Func::Exit())
+		throw GB_Exception(ERR_GB_EXIT_STR, ERR_GB_EXIT_ID);
 
 	return 0;
 }
