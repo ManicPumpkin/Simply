@@ -1,4 +1,4 @@
-﻿Der Buildvorgang wurde am 31.03.2014 19:39:01 gestartet.
+﻿Der Buildvorgang wurde am 31.03.2014 23:18:22 gestartet.
      1>Projekt "X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Simply.vcxproj" auf Knoten "2", Build Ziel(e).
      1>PreBuildEvent:
          copy_engine.bat
@@ -11,6 +11,7 @@
          .\..\..\..\GooseBerry\GooseBerry\inc\GB_Defines.h
          .\..\..\..\GooseBerry\GooseBerry\inc\GB_Errors.h
          .\..\..\..\GooseBerry\GooseBerry\inc\GB_Exception.h
+         .\..\..\..\GooseBerry\GooseBerry\inc\GB_Loader.h
          .\..\..\..\GooseBerry\GooseBerry\inc\GB_Log.h
          .\..\..\..\GooseBerry\GooseBerry\inc\GB_Material.h
          .\..\..\..\GooseBerry\GooseBerry\inc\GB_Matrix.h
@@ -26,7 +27,7 @@
          .\..\..\..\GooseBerry\GooseBerry\inc\GB_Vector2.h
          .\..\..\..\GooseBerry\GooseBerry\inc\GB_Vector3.h
          .\..\..\..\GooseBerry\GooseBerry\inc\gooseberry.h
-         23 Datei(en) kopiert
+         24 Datei(en) kopiert
          .\..\..\..\GooseBerry\GooseBerry\ext\glut-3.7.6\glut.def
          .\..\..\..\GooseBerry\GooseBerry\ext\glut-3.7.6\glut.h
          .\..\..\..\GooseBerry\GooseBerry\ext\glut-3.7.6\glut32.dll
@@ -51,12 +52,9 @@
          simply.cc
      1>x:\projects\cpp\opengl\simply\simply\simply\src\simply.cc(88): warning C4297: 'WinMain': Die Funktion löst eine unerwartete Ausnahme aus
                  '__declspec(nothrow)' oder 'throw()' wurde für die Funktion angegeben
-       Link:
-         D:\APPLICATION\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Debug\Simply.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Debug\Simply.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Debug\Simply.lib" /MACHINE:X86 Debug\simply.obj
-         X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Debug\GooseBerry.lib
-         Simply.vcxproj -> X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Debug\Simply.exe
-     1>Die Erstellung des Projekts "X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Simply.vcxproj" ist abgeschlossen, Build Ziel(e).
+     1>x:\projects\cpp\opengl\simply\simply\simply\src\simply.cc(131): error C3861: "LoadPngImage": Bezeichner wurde nicht gefunden.
+     1>Die Erstellung des Projekts "X:\PROJECTS\CPP\OPENGL\Simply\Simply\Simply\Simply.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
 
-Build erfolgreich.
+Fehler beim Buildvorgang.
 
-Verstrichene Zeit 00:00:04.04
+Verstrichene Zeit 00:00:04.26
